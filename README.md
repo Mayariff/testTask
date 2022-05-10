@@ -3,7 +3,7 @@
 Технологии в проекте:
 react with hooks, redux, ts, jest, axios, sass, MUI, redux thunk, redux toolkit
 
-![hall](https://github.com/Mayariff/testTask/blob/master/src/giv/demo.gif)
+![hall](https://github.com/Mayariff/testTask/blob/master/src/gif/demo.gif)
 
 Чтобы запустить приложение нужно скачать его
 и приложение-сервер с данными https://github.com/Mayariff/json-server-app-test
