@@ -1,0 +1,16 @@
+
+@mixin flexStyle($dir, $jContent){
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jContent;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+@mixin position($position, $top, $left, $zIndex){
+  position: $position;
+  top:$top;
+  left: $left;
+  z-index: $zIndex;
+}

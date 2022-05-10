@@ -1,0 +1,13 @@
+@import '../../styles/mixins';
+.container {
+  padding: 24px;
+  .contactMenu {
+    position: sticky;
+    @include flexStyle(row, space-between);
+    padding-bottom: 30px;
+  @media screen and (max-width: 650px) {
+    @include flexStyle(column-reverse, center);
+    min-height: 100px;
+    }
+  }
+  }

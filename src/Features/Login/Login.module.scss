@@ -1,0 +1,12 @@
+.PaperContainer{
+    padding: 40px 20px 60px;
+@media screen and (max-width: 650px) {
+    padding: 10px 20px 30px;
+}
+    .error {
+        color: red;
+    }
+    .hidden{
+        visibility: hidden;
+    }
+}

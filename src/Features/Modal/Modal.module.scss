@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.main{
+  .wrapper {
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    @include position(fixed, 0, 0, 10);
+    @include flexStyle(row,center);
+  }
+  .body {
+    @include position(absolute, 0, 20%, 111);
+    max-width: 480px;
+    right: 10%;
+    padding: 3%;
+   @media screen and (max-width: 5950px) {
+     padding: 3% 6%;
+    }
+
+    .containerModal {
+      z-index: 12;
+      text-align: center;
+      width: 100%;
+      .titleModal {
+        padding: 0;
+        margin: 0;
+        font-size: 1.4rem;
+        color: $accentTextColor;
+      }
+      .content {
+        color: $secondaryText;
+        padding: 20px 0;
+        @include flexStyle(row, space-between);
+        flex-wrap: nowrap;
+          .fields {
+            @include flexStyle(column, space-between);
+            &:first-child{
+              margin-right: 20px;
+             @media screen and (max-width: 850px) {
+                margin-right: 0;
+              }
+            }
+            .field{
+              height: 70px;
+            }
+          }
+      @media screen and (max-width: 850px) {
+            flex-direction: column;
+            align-items: center;
+          }
+      }
+      .buttonContainer {
+        @include flexStyle(row, space-around);
+      }
+    }
+  }
+}
+
+
+
+
+

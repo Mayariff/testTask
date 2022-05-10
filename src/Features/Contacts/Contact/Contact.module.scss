@@ -1,0 +1,108 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+.contactContainer {
+  margin-bottom: 20px ;
+  position: relative;
+  .contentBox{
+    box-sizing: border-box;
+    display: flex;
+    padding: 14px 20px;
+    &:hover{
+      background-color: rgba(204, 228, 255, 0.2);
+    }
+    @media screen and (max-width: 600px){
+      flex-direction: column;
+      padding: 14px 14px;
+    }
+    @media screen and (max-width: 300px){
+      font-size: 0.8rem;
+      padding: 14px 2px;
+      white-space: normal !important;
+    }
+
+    .avatarBox {
+      align-self: center;
+      border: 1px solid gray;
+      height: 80px;
+      min-width: 80px;
+      background: red no-repeat center scroll;
+      background-size: cover;
+      border-radius: 50% ;
+      overflow:hidden;
+    }
+    .info {
+      flex-grow: 2;
+      padding-left: 1em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @media screen and (max-width: 600px){
+        align-items: center;
+        padding-left: 0;
+      }
+
+      .name {
+        padding-left: 8px;
+        color: $accentTextColor;
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.334;
+        letter-spacing: 0;
+        @media screen and (max-width: 600px){
+          padding-left: 0;
+        }
+        @media screen and (max-width: 300px){
+          font-size: 1.2rem;
+          padding: 14px 2px;
+          white-space: normal ;
+        }
+      }
+
+      .aboutContact {
+        padding-left: 10px;
+        color: $secondaryText;
+        letter-spacing: 0.00938em;
+        font-size: 1.1rem;
+        margin: 0;
+        &.hidden{
+          visibility: hidden;
+        }
+        @media screen and (max-width: 600px){
+          padding-left: 0;
+        }
+      }
+      .contactDetails {
+        @include flexStyle(row,center);
+        align-items: baseline;
+        @media screen and (max-width: 738px){
+          @include flexStyle(column,center);
+         align-items: flex-start;
+        }
+        .contact {
+          color: $accentTextColor;
+          display: inline-block;
+          white-space: nowrap;
+          margin-right: 20px;
+          @media screen and (max-width: 600px){
+            margin:0;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .deleteIcon{
+      position: absolute;
+      top:0;
+      right: 0;
+      color: $secondaryText;
+      @media screen and (max-width: 450px){
+        @include flexStyle(row,space-around);
+        position: relative;
+      }
+
+    }
+  }
+}
