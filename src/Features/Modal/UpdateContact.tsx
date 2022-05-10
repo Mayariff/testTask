@@ -67,7 +67,7 @@ const UpdateContact = React.memo(({showAdd, contact}: updateContactType) => {
     return (
         <form className={s.containerModal} onSubmit={formik.handleSubmit}>
             <FormControl>
-                <h2 className={s.titleModal}>Add Contact</h2>
+                <h2 className={s.titleModal}>Update Contact</h2>
                 <div className={s.content}>
                     <FormGroup className={s.fields}>
                         <div className={s.field}>
