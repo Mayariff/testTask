@@ -5,10 +5,14 @@ react with hooks, redux, ts, jest, axios, sass, MUI, redux thunk, redux toolkit
 
 ![hall](https://github.com/Mayariff/testTask/blob/master/src/gif/demo.gif)
 
-Чтобы запустить приложение нужно скачать его
-и приложение-сервер с данными https://github.com/Mayariff/json-server-app-test
+Как запускать:
 
+1. Скачать приложение https://github.com/Mayariff/testTask
+2. Скачать приложение https://github.com/Mayariff/json-server-app-test 
+3. Стартануть оба приложения (yarn start)
+4. Все должно работать) 
 
+PS: версия  node v16.14.2
 
 Описание:
 Приложение -аналог электронной телефонной книги.
