@@ -8,7 +8,7 @@ react with hooks, redux, ts, jest, axios, sass, MUI, redux thunk, redux toolkit
 Как запускать:
 
 1. Скачать приложение https://github.com/Mayariff/testTask
-2. Скачать приложение https://github.com/Mayariff/json-server-app-test 
+2. Скачать приложение https://github.com/Mayariff/json-server1 
 3. Стартануть оба приложения (yarn start)
 4. Все должно работать) 
 
